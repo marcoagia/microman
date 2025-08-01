@@ -3,12 +3,12 @@
   "author": "marcoagia",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcoagia/microman"
+    "url": "git+https://github.com/marcoagia/microman.git"
   },
-  "version": "1.0.0",
+  "version": "0.0.4",
   "license": "MIT",
   "bin": {
-    "microman": "./bin/cli.js"
+    "microman": "bin/cli.js"
   },
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
