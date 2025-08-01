@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/marcoagia/microman"
   },
-  "version": "1.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "bin": {
     "microman": "./bin/cli.js"
