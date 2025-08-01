@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Compiled TypeScript output
+dist/
+*.tsbuildinfo
+
+# Environment files
+.env
+*.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac & Linux system files
+.DS_Store
+
+# VSCode & JetBrains settings
+.vscode/
+.idea/
+
+# OS specific
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# npm pack/restore artifacts
+*.tgz
+
+# Optional: Ignore local debug/test files (customize as needed)
+local.*
