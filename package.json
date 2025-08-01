@@ -2,10 +2,10 @@
   "name": "microman",
   "author": "marcoagia",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/marcoagia/microman"
+    "type": "git",
+    "url": "https://github.com/marcoagia/microman"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "bin": {
     "microman": "./bin/cli.js"
