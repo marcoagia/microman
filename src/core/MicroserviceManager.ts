@@ -67,9 +67,14 @@ export class MicroserviceManager {
   }
 
   private async updateDockerCompose(serviceName: string, msPath: string) {
+    // If docker-compose.yml does not exist, create a minimal one
     if (!(await fs.pathExists(this.dockerComposeFile))) {
-      console.error(`docker-compose.yml not found at project root.`);
-      return;
+      const initialCompose = {
+        version: "3.8",
+        services: {},
+      };
+      await fs.writeFile(this.dockerComposeFile, YAML.stringify(initialCompose));
+      console.log("Created new docker-compose.yml at project root.");
     }
     const dcContent = await fs.readFile(this.dockerComposeFile, "utf-8");
     const dc = YAML.parse(dcContent) || {};
