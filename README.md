@@ -1,6 +1,6 @@
 # microman
 
-**microservice-manager** is a powerful CLI tool that scaffolds new microservices using popular backend technologies, and automatically integrates them into your project’s Docker Compose setup.  
+**microman** is a powerful CLI tool that scaffolds new microservices using popular backend technologies, and automatically integrates them into your project’s Docker Compose setup.  
 Use it to quickly expand and organize your microservice-based architecture!
 
 ---

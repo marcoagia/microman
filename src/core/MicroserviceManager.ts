@@ -25,8 +25,8 @@ export class MicroserviceManager {
 
   public async run() {
     const args = process.argv.slice(2);
-    if (!(args[0] === "new" && args[1] === "microservice")) {
-      console.error("Usage: microservice-manager new microservice");
+    if (!(args[0] === "new")) {
+      console.error("Usage: microman new");
       process.exit(1);
     }
 
@@ -66,10 +66,7 @@ export class MicroserviceManager {
     console.log(`Microservice "${slug}" created successfully!`);
   }
 
-  private async updateDockerCompose(
-    serviceName: string,
-    msPath: string,
-  ) {
+  private async updateDockerCompose(serviceName: string, msPath: string) {
     if (!(await fs.pathExists(this.dockerComposeFile))) {
       console.error(`docker-compose.yml not found at project root.`);
       return;
